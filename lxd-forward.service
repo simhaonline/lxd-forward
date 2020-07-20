@@ -5,9 +5,8 @@ After=lxd.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/lxd-forward on
-ExecStop=/usr/bin/lxd-forward off
+ExecStart=/usr/local/bin/lxd-forward on
+ExecStop=/usr/local/bin/lxd-forward off
 
 [Install]
 WantedBy=multi-user.target
-
